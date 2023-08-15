@@ -1,0 +1,98 @@
+html, :root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.elevator {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 50vh;
+}
+
+.floor-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  gap: 4px;
+  width: 20%;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 20px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.active-button {
+  background-color: rgb(241, 107, 107);
+}
+
+.elevator-cabin {
+  width: 250px;
+  height: 150px;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.elevator-cabin p {
+  margin: 0;
+}
+
+.direction-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.current-floor-label {
+  margin: 4px;
+}
+
+.elevator-position {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #3498db;
+  height: 5px;
+  transition: transform 0.5s;
+}
